@@ -1,7 +1,7 @@
 .footer {
-    padding: 2.5 0;
-    ;
+
     background-color: $grisOscuro;
+    margin-bottom: 0;
 
     .contenedor-footer {
         padding-top: 2.5rem;
@@ -11,4 +11,22 @@
         color: $blanco;
         text-align: center;
     }
+}
+
+/* Asegúrate de que body y html no tengan márgenes */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Opcional: Esto asegura que el footer siempre esté al final de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto;
 }
